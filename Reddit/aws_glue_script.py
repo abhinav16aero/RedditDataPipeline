@@ -30,7 +30,7 @@ Amazon53_node1697982521889 = glueContext.create_dynamic_frame.from_options(
     format="csv",
     connection_options={
         "recurse": True, 
-        "paths": ["s3://reddit-engineering/raw/reddit_20240602.csv"]
+        "paths": ["s3://reddit-abhinav16aero-2024/reddit_20240602.csv"]
     },
     transformation_ctx="Amazon53_node1697982521889"
 )
@@ -53,7 +53,7 @@ glueContext.write_dynamic_frame.from_options(
     connection_type="s3",
     format="csv",
     connection_options={
-        "path": "s3://reddit-engineering/transformed/",
+        "path": "s3://reddit-abhinav16aero-2024/transformed/",
         "partitionKeys": []
     },
     transformation_ctx="Amazon53_node1697982526335"

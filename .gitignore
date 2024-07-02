@@ -1,6 +1,5 @@
-tests
-venv
-*.conf
-logs
-.idea
-__pycache__
+Reddit/venv
+Reddit/*.conf
+Reddit/logs
+Reddit/.idea
+Reddit/__pycache__
